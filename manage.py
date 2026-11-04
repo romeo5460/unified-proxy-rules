@@ -86,7 +86,10 @@ def load_policy():
             raise ValueError("publish_base must be a credential-free HTTPS directory URL")
     if not isinstance(p["interval"], int) or p["interval"] < 3600:
         raise ValueError("interval must be at least 3600 seconds")
-    for source in p["upstreams"].values():
+    for name, source in p.get('domain_sources', {}).items():
+        if not re.fullmatch(r'[a-z0-9-]+', name) or name in p['upstreams'] or source.get('target') not in ['custom-proxy', 'custom-direct'] or source.get('behavior') != 'domain':
+            raise ValueError('invalid imported domain source')
+    for source in list(p["upstreams"].values()) + list(p.get('domain_sources', {}).values()):
         u = urllib.parse.urlsplit(source["url"])
         if u.scheme != "https" or u.hostname != "raw.githubusercontent.com" or not u.path.startswith("/MetaCubeX/meta-rules-dat/") or u.query:
             raise ValueError("unexpected upstream source")
@@ -139,7 +142,7 @@ def fetch():
     CACHE.mkdir(exist_ok=True)
     pending = {}
     lock = {"fetched_utc": dt.datetime.now(dt.timezone.utc).isoformat(), "sources": {}}
-    for name, spec in p["upstreams"].items():
+    for name, spec in {**p['upstreams'], **p.get('domain_sources', {})}.items():
         request = urllib.request.Request(spec["url"], headers={"User-Agent": "unified-proxy/1"})
         with urllib.request.urlopen(request, timeout=60) as r:
             raw = r.read(20_000_001)
@@ -157,11 +160,17 @@ def payloads(p):
     result = {"custom-proxy": {"payload": ["+." + x for x in p["proxy_domains"]]},
               "custom-direct": {"payload": ["+." + x for x in p["direct_domains"]]}}
     lock = json.loads((CACHE / "sources.lock.json").read_text())
-    for name, spec in p["upstreams"].items():
+    for name, spec in {**p['upstreams'], **p.get('domain_sources', {})}.items():
         raw = (CACHE / (name + ".yaml")).read_bytes()
         if hashlib.sha256(raw).hexdigest() != lock["sources"][name]["sha256"] or spec["url"] != lock["sources"][name]["url"]:
             raise ValueError("cached source differs from lock; run fetch")
-        result[name] = validate_payload(raw, spec["behavior"])
+        content = validate_payload(raw, spec["behavior"])
+        if 'target' in spec:
+            result[spec['target']]['payload'].extend(content['payload'])
+        else:
+            result[name] = content
+    for content in result.values():
+        content['payload'] = list(dict.fromkeys(content['payload']))
     return result
 
 

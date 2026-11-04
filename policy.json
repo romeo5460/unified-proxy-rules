@@ -1,5 +1,5 @@
 {
-  "version": "2026.11.04.2",
+  "version": "2026.11.04.3",
   "default_node": "Evoxt-MY-KL",
   "publish_base": "https://raw.githubusercontent.com/romeo5460/unified-proxy-rules/main",
   "interval": 86400,
@@ -7,9 +7,9 @@
     "local",
     "media",
     "custom-proxy",
+    "custom-direct",
     "ai",
     "foreign",
-    "custom-direct",
     "cn",
     "cn-ip",
     "final"
@@ -82,7 +82,32 @@
     "tiktokv.com",
     "dropbox.com",
     "dropboxapi.com",
-    "dropboxusercontent.com"
+    "dropboxusercontent.com",
+    "vsco.co",
+    "sigstick.com",
+    "facetuneapp.com",
+    "lightricks.com",
+    "upwork.com",
+    "upworkcdn.com",
+    "notion.so",
+    "notion.site",
+    "notion.com",
+    "mega.nz",
+    "mega.io",
+    "linkedin.com",
+    "licdn.com",
+    "pinterest.com",
+    "pinimg.com",
+    "tumblr.com",
+    "threads.net",
+    "threads.com",
+    "wikipedia.org",
+    "wikimedia.org",
+    "wikimediafoundation.org",
+    "muse.ai",
+    "meta.ai",
+    "metaaivm.com",
+    "metaaiusercontent.com"
   ],
   "direct_domains": [
     "cn",
@@ -115,7 +140,30 @@
     "aliyuncs.com",
     "tencent.com",
     "myqcloud.com",
-    "qcloud.com"
+    "qcloud.com",
+    "music.apple.com",
+    "musickit.net",
+    "quark.cn",
+    "uc.cn",
+    "pixcakes.com",
+    "pixcookie.com",
+    "pixcakeai.com",
+    "crossyroad.com",
+    "hipsterwhale.com",
+    "duolingo.com",
+    "duolingo.cn",
+    "duolingo.net",
+    "goodnotes.com",
+    "goodnotescloud.com",
+    "starbucks.com",
+    "starbucks.com.cn",
+    "aod-ssl.itunes.apple.com",
+    "aod.itunes.apple.com",
+    "audio-ssl.itunes.apple.com",
+    "audio.itunes.apple.com",
+    "mvod.itunes.apple.com",
+    "streamingaudio.itunes.apple.com",
+    "goodnotes-devops.com"
   ],
   "local_domains": [
     "localhost",
@@ -164,6 +212,18 @@
     "cn-ip": {
       "behavior": "ipcidr",
       "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.yaml"
+    }
+  },
+  "domain_sources": {
+    "service-steam": {
+      "target": "custom-proxy",
+      "behavior": "domain",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/steam.yaml"
+    },
+    "service-apple-music": {
+      "target": "custom-direct",
+      "behavior": "domain",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple-music.yaml"
     }
   }
 }

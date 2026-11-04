@@ -1,15 +1,15 @@
 {
-  "fetched_utc": "2026-11-04T02:26:08.145973+00:00",
+  "fetched_utc": "2026-11-04T05:26:12.542892+00:00",
   "sources": {
     "ai": {
       "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ai-!cn.yaml",
-      "sha256": "1e7b206983722c321249eb40a907680cc2d668206f6d5805d96fe7b92307a076",
+      "sha256": "482554f9a791661a1bdd1a52b01b40bd000e9f3534f9f0185c589095da3a9a88",
       "entries": 213
     },
     "foreign": {
       "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.yaml",
-      "sha256": "ef894555768f841ce2bab485f3214e95934fc70611347ec441dcdde1e916ccff",
-      "entries": 27291
+      "sha256": "f4e3281ba51721102761c57826a116f92594b1b5eb876bc0ddde2c44cf35470e",
+      "entries": 27293
     },
     "cn": {
       "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.yaml",
@@ -20,6 +20,16 @@
       "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.yaml",
       "sha256": "44927e07f547c3cadba02c97155eb5156b40702e8e1d86538399db85b3911f80",
       "entries": 9662
+    },
+    "service-steam": {
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/steam.yaml",
+      "sha256": "47ad4e79ea85ae5c2d31cd9b8d7d9e5206cc09d371dba11d8d20e10d9da720c9",
+      "entries": 61
+    },
+    "service-apple-music": {
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple-music.yaml",
+      "sha256": "383401f7000237d26c33e12896279f86e5af0454ac57f6a147836125f930fc75",
+      "entries": 18
     }
   }
 }
