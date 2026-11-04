@@ -32,7 +32,8 @@ class PublicTests(unittest.TestCase):
                  'www.muse.ai', 'x.com', 'notebooklm.google.com']
         direct = ['music.apple.com', 'amp-api.music.apple.com', 'audio-ssl.itunes.apple.com',
                   'www.quark.cn', 'www.pixcakes.com', 'www.pixcookie.com', 'www.crossyroad.com',
-                  'www.duolingo.com', 'sync.goodnotescloud.com', 'www.starbucks.com', 'weixin.qq.com', 'www.taobao.com']
+                  'www.duolingo.com', 'sync.goodnotescloud.com', 'www.starbucks.com', 'weixin.qq.com', 'www.taobao.com',
+                  'kimi.ai', 'api.moonshot.ai', 'api.deepseek.com', 'www.doubao.com', 'www.dazz.ltd', 'www.playbalatro.com']
         for host in proxy:
             with self.subTest(host=host): self.assertEqual(route(host), 'PROXY')
         for host in direct:
