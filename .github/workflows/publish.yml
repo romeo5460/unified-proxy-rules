@@ -1,0 +1,34 @@
+name: Publish credential-free routing rules
+on:
+  workflow_dispatch:
+  push:
+    paths: [policy.json, manage.py, shadowrocket.py, test_public.py, requirements.txt, .github/workflows/publish.yml]
+  schedule:
+    - cron: '29 22 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: publish-rules
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - run: python manage.py fetch
+      - run: python manage.py public
+      - run: python test_public.py
+      - name: Update rule artifacts only
+        shell: bash
+        run: |
+          cp build/public/*.yaml build/public/*.list build/public/*.json build/public/*.conf .
+          git add -- '*.yaml' '*.list' manifest.json sources.lock.json Unified-Shadowrocket.conf
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name 'routing-rules-bot'
+          git config user.email 'routing-rules-bot@users.noreply.github.com'
+          git commit -m 'Update credential-free rule artifacts'
+          git push
