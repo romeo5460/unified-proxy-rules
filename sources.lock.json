@@ -1,9 +1,9 @@
 {
-  "fetched_utc": "2026-11-07T02:07:54.957524+00:00",
+  "fetched_utc": "2026-11-08T01:39:31.881026+00:00",
   "sources": {
     "ai": {
       "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ai-!cn.yaml",
-      "sha256": "08a827256cbb8d4cfe139ba13ed2c774bd2287fc4d1f534db7cc660353ebd74d",
+      "sha256": "e36d238ff0f70fb503857ed4a684b4dbbe5af949c51c90b19517a719171ba869",
       "entries": 213
     },
     "foreign": {
