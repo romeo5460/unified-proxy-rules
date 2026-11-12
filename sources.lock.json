@@ -1,15 +1,15 @@
 {
-  "fetched_utc": "2026-11-11T02:02:04.239027+00:00",
+  "fetched_utc": "2026-11-12T03:12:16.481966+00:00",
   "sources": {
     "ai": {
       "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ai-!cn.yaml",
-      "sha256": "407d24e74975836aecabe5a327370c2a46cfafc6e3daecb2237bc94b9a55a911",
+      "sha256": "c393ac814ccdd2ce31612a690a69ac52639ade58c6ae417168b3ac0586f5bfb4",
       "entries": 217
     },
     "foreign": {
       "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.yaml",
-      "sha256": "22250247eafe3269eba4c5252c87631bb01ad740b2dbbea4e3a5142ec06a427c",
-      "entries": 27302
+      "sha256": "26bc45815f98b3c494a5f82e1a7ce0cfa34f250a66dd22bd7fedaa505f9074e0",
+      "entries": 27307
     },
     "cn": {
       "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.yaml",

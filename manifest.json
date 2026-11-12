@@ -1,8 +1,8 @@
 {
   "version": "2026.11.04.4",
   "files": {
-    "ai.list": "b5cc666c21a73414af07a3ce0f7bf33e2dc1c12ad44206249c343300989c8e3b",
-    "ai.yaml": "d57e64a9f3bf67b9c71535e0805de388bb9bda7a3f5e2d351175269b04ab31f3",
+    "ai.list": "1bff54b3297aa797c6d8960f7ade86b932e0355794a4802ad60fbd0745e9a9fe",
+    "ai.yaml": "fe6715d8144946e99d5857a06a9b86d562eb07e5f9e7d1e424ee8e44f8ce3eab",
     "cn-ip.list": "69f4156ab0ca1b995bdd9f63ddaabcd2041555f5f48e73572edaad0195c2eacc",
     "cn-ip.yaml": "375f9cca33d05a67b3238fd9557a3fbe9e4ccd50e1e4a619dde7dd43c70f8f8e",
     "cn.list": "455f6b5f8877d49af4e374b8d8e661f25bc39ad8f689623bd9eee2fde74b2184",
@@ -11,8 +11,8 @@
     "custom-direct.yaml": "114a20e7065165eff91bcfba0d75ab0fcd1aa8da0d4613713eacd181aeadccc4",
     "custom-proxy.list": "58e073c5b18f6d839c2c665bf0907dfba1e5f9772197ba01c8538640eae23da4",
     "custom-proxy.yaml": "b8552b8dab866ded8522b6c180390a6ca96755cc3e2495145a58c09031b20c4b",
-    "foreign.list": "5dd874b3a729ed237f11a7288fde70a4f355d1700e39272411a7016908f3caf2",
-    "foreign.yaml": "142db1532d71830bd0ed8a3460c705051cf6a6d1491e920651d1a8b122b73454",
+    "foreign.list": "9972d29a6c085e4e0ee60c1d831630685373d1795e287d69c289ee15316ab181",
+    "foreign.yaml": "2f438eed19fa1124824bdc0919b914f4dcbc120abb650c5b88e39ec973556906",
     "Unified-Shadowrocket.conf": "7b3c797466e4feec902ad8ec8e3a3493d2b03c941e31040d2a3971420eecaa42"
   }
 }
