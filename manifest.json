@@ -1,10 +1,10 @@
 {
   "version": "2026.11.04.4",
   "files": {
-    "ai.list": "1bff54b3297aa797c6d8960f7ade86b932e0355794a4802ad60fbd0745e9a9fe",
-    "ai.yaml": "fe6715d8144946e99d5857a06a9b86d562eb07e5f9e7d1e424ee8e44f8ce3eab",
-    "cn-ip.list": "69f4156ab0ca1b995bdd9f63ddaabcd2041555f5f48e73572edaad0195c2eacc",
-    "cn-ip.yaml": "375f9cca33d05a67b3238fd9557a3fbe9e4ccd50e1e4a619dde7dd43c70f8f8e",
+    "ai.list": "1ee8b52b85228fb534712ba2f00cda72b97656da476f31268e29b4fa958c0c14",
+    "ai.yaml": "bc54643681fd2831a6b5d5c9aa6e1501cc27e414a2274c9bf229c2eddf079284",
+    "cn-ip.list": "b7a717fb675b89d8912b723cab6151e0d573e4ec3edac9517e6ec2b72928ba04",
+    "cn-ip.yaml": "be6804edd2a33bb3f94482e2efd8f124f820b803efde2b4b5e950f71f7657551",
     "cn.list": "455f6b5f8877d49af4e374b8d8e661f25bc39ad8f689623bd9eee2fde74b2184",
     "cn.yaml": "33137374a8e9e60463ff980f90b8870c092ca6c615ceeee0caa40a07d793d8f2",
     "custom-direct.list": "97d96e69c62a78eaec575decc3231988eb45306d69931c33dd69ae8583496f00",
