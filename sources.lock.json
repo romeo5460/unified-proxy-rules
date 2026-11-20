@@ -1,14 +1,14 @@
 {
-  "fetched_utc": "2026-11-19T03:43:19.584649+00:00",
+  "fetched_utc": "2026-11-20T03:37:30.150224+00:00",
   "sources": {
     "ai": {
       "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ai-!cn.yaml",
-      "sha256": "0a4b4f360af34e6569ec90daace5cc48dec585a19cacf2f5b308b372a6815d09",
+      "sha256": "d82a96936daa6a6af8f264f7397902f9e424097de3f402e665a230619b7c47fe",
       "entries": 218
     },
     "foreign": {
       "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.yaml",
-      "sha256": "e97c4726d777cb6f09e95a4dee1831ce7c11888af4009150e9d2898eb3217ea2",
+      "sha256": "dcb2bf530a192c938bd77ee480f6d5ad6fde83e1873801276f6d01873f9bf5c8",
       "entries": 27315
     },
     "cn": {
@@ -18,8 +18,8 @@
     },
     "cn-ip": {
       "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.yaml",
-      "sha256": "3580f5e09a149285105a64a371ba68147a936d8e1d5d849fade8c68203285ade",
-      "entries": 9640
+      "sha256": "aff26902748208098ef07c6c7544dfd1e8eece08ad6e8b47ff639bbc36a822de",
+      "entries": 9665
     },
     "service-steam": {
       "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/steam.yaml",
