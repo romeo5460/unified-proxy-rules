@@ -1,8 +1,8 @@
 {
   "version": "2026.11.04.4",
   "files": {
-    "ai.list": "d4d80088dba1fe6a2fdd1ca4d5d715bdf12e99cc83cb2e50abab17e4a3ed5d52",
-    "ai.yaml": "b1af71f33e802cc83cfa3c98095dd2d467ca28764f2f88c89015c15c24fa0503",
+    "ai.list": "e49c75140d156230b815522f44c4aebcf85e64458c41caee0507e70daf52a803",
+    "ai.yaml": "70b96a8315a485229afaadcceb5a2054f672ef0a362a9b6dcc791d043ee4aa29",
     "cn-ip.list": "e0330f25c8d9af1879ac45d7f59df38368590715e55d0042ec6402abb588bc89",
     "cn-ip.yaml": "55f3a7b985a2cbe32bd268dcf9d38e758ddc6a0b76f6f108a6670f23b8ec9380",
     "cn.list": "455f6b5f8877d49af4e374b8d8e661f25bc39ad8f689623bd9eee2fde74b2184",
