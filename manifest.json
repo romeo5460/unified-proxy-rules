@@ -1,18 +1,18 @@
 {
   "version": "2026.11.04.4",
   "files": {
-    "ai.list": "52b1d4cc78669a68a9b688621b5bd425df3e2853a02278ba9b5751829aaee139",
-    "ai.yaml": "b3a83f4f0b1be7545aac1b699e5c6f15d696035c041ec6410b23a44c3f448b51",
-    "cn-ip.list": "e0330f25c8d9af1879ac45d7f59df38368590715e55d0042ec6402abb588bc89",
-    "cn-ip.yaml": "55f3a7b985a2cbe32bd268dcf9d38e758ddc6a0b76f6f108a6670f23b8ec9380",
+    "ai.list": "ca3e6ab7cec4cb7453688be81a4ddc4d1b1cff2cee1f47df1be18fbbb0e6a0b2",
+    "ai.yaml": "ef4c6dd88f2f5cf0d405d6e6d2289980ff7686588425ad4768d2ce2cb4783057",
+    "cn-ip.list": "864bac4745f9c04fc7ab8767cebffc88208026dd15a8a03ea260262e13d5b00c",
+    "cn-ip.yaml": "01ed35d12fac47b7daaa6abf70d5ea6fab8db6751d69ddcb5731d2f4138cc370",
     "cn.list": "455f6b5f8877d49af4e374b8d8e661f25bc39ad8f689623bd9eee2fde74b2184",
     "cn.yaml": "33137374a8e9e60463ff980f90b8870c092ca6c615ceeee0caa40a07d793d8f2",
     "custom-direct.list": "97d96e69c62a78eaec575decc3231988eb45306d69931c33dd69ae8583496f00",
     "custom-direct.yaml": "114a20e7065165eff91bcfba0d75ab0fcd1aa8da0d4613713eacd181aeadccc4",
     "custom-proxy.list": "58e073c5b18f6d839c2c665bf0907dfba1e5f9772197ba01c8538640eae23da4",
     "custom-proxy.yaml": "b8552b8dab866ded8522b6c180390a6ca96755cc3e2495145a58c09031b20c4b",
-    "foreign.list": "4dd516550e2c051a5fa44270db57ffcc0e6745088fe038230c439a7e9e9d736d",
-    "foreign.yaml": "bbf4ad6a9da0d059debb40d0d78b9c330821878a5b0a0d2ec764e95a497d1a01",
+    "foreign.list": "90a5893546fb8a21a429173bd7f4ae1de358cd488d8e9646eea27e44a19c9461",
+    "foreign.yaml": "be758aa5c813db2bfdf861a6a10442dbaf9de124e81fca99759a6916694ed08d",
     "Unified-Shadowrocket.conf": "7b3c797466e4feec902ad8ec8e3a3493d2b03c941e31040d2a3971420eecaa42"
   }
 }
